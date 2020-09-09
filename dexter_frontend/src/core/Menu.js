@@ -72,6 +72,26 @@ const Menu = ({ history }) => (
                         onClick={() =>
                             signout(() => {
                                 history.push("/");
+                            }).then(()=>{
+                                const modal = document.createElement('div');
+                                modal.innerHTML = "You've successfully signed out";
+                                modal.style.position = "absolute";
+                                modal.style.top = 0;
+                                modal.style.left = 0;
+                                modal.style.height = "100vh";
+                                modal.style.width = "100vw";
+                                modal.style.textAlign = "center";
+                                modal.style.background = "rgba(0,0,0,0.9)";
+                                modal.style.marginTop = "auto";
+                                modal.style.color = "white";
+                                modal.style.fontSize = "3vmin";
+                                modal.style.display = "flex";
+                                modal.style.justifyContent = "center";
+                                modal.style.alignItems = "center";
+                                modal.onclick = () => {
+                                    modal.style.display = "none"
+                                }
+                                document.getElementById('root').append(modal);
                             })
                         }
                     >

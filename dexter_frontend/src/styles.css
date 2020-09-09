@@ -1,0 +1,46 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#homepage {
+    height: 100vh;
+    width: 100vw;
+    background: #eae7ed;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    margin-top: 20%;
+    width: 1%;
+    align-self: center;
+    animation: zoomin 1000ms forwards;
+}
+
+@keyframes zoomin {
+    100% {
+        width: 25%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+}
+
+#subtext {
+    color: transparent;
+    align-self: center;
+    /*margin: 0;*/
+    font-weight: 1000;
+    animation: fadein 1000ms 1000ms forwards;
+}
+
+@keyframes fadein {
+    100% {
+        color: #7250cd
+    }
+}
