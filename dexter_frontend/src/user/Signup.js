@@ -36,12 +36,12 @@ const Signup = () => {
                     success: true
                 });
             }
-        });
+        });//missing catch block
     };
 
     const signUpForm = () => (
         //Layout of Signup form(Bootstrap CSS is used for this)
-        <form>
+        <form className="suform">
             <div className="form-group">
                 <label className="text-muted">Name</label>
                 <input onChange={handleChange('name')} type="text" className="form-control" value={name} />

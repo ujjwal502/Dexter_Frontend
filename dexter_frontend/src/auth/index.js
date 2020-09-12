@@ -1,5 +1,22 @@
 import { API } from '../config';
 
+export const addLiveRoom = room => {
+    return fetch(`${API}/livestream`, {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(room)
+    })
+        .then(response => response.json())
+        .then(resjson => {return resjson})
+        .catch(err => console.log(err))
+
+}
+
+
+
 // fetching the API for signup and exporting to Signup.js
 export const signup = user => {
     return fetch(`${API}/signup`, {
@@ -13,6 +30,7 @@ export const signup = user => {
         .then(response => {
             return response.json();
         })
+        //Get data here
         .catch(err => {
             console.log(err);
         });

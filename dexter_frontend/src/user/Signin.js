@@ -41,7 +41,7 @@ const Signin = () => {
     };
     //Layout for signin form(Bootstrap CSS is used)
     const signUpForm = () => (
-        <form>
+        <form className="suform">
             <div className="form-group">
                 <label className="text-muted">Email</label>
                 <input onChange={handleChange('email')} type="email" className="form-control" value={email} />

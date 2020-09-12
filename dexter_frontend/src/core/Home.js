@@ -11,11 +11,44 @@ const Home = () => {
         // <Layout title='Home Page' description='Dexter App'>
         //     ......
         // </Layout>
+        <React.Fragment>
+        <Menu id="head-menu"/>
         <div id="homepage">
-            <Menu id="head-menu"/>
-            <img src={Logo} align="middle" id="logo"></img>
-            <h1 id="subtext">#Just Learning Happening</h1>
+            
+            <div id="brand">
+                <img src={Logo} id="logo"></img>
+                <h1 id="subtext">#Just Learning Happening</h1>
+            </div>
+
+            <div id="home-card-section">
+
+                <div className="home-card">
+                    React
+                </div>
+
+                <div className="home-card">
+                    React
+                </div>
+
+                <div className="home-card">
+                    React
+                </div>
+
+                <div className="home-card">
+                    React
+                </div>
+
+                <div className="home-card">
+                    React
+                </div>
+                
+                <div className="home-card">
+                    React
+                </div>
+
+            </div>
         </div>
+        </React.Fragment>
     )
 }
 
