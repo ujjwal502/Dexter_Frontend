@@ -1,7 +1,7 @@
 # Dexter
 Skill-learning Platform
 ***
-Deployed project link :- https://enfotainment.herokuapp.com/
+Deployed project link :- https://dexter-frontend.herokuapp.com/
 ***
 
 Created using Mongo, Mongoose, Express, Node, React, AntD UI Kit, Bootstrap and CSS3.
